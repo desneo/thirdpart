@@ -1,0 +1,8 @@
+prefix=/home/zsh/code/thirdpart/zenohc/1.10.0/x64/ubuntu22.04
+
+Name: zenohc
+Description: The C bindings for Zenoh
+URL: https://github.com/eclipse-zenoh/zenoh-c
+Version: 1.10.0
+Cflags: -I${prefix}/include
+Libs: -L${prefix}/lib -lzenohc

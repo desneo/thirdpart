@@ -1,0 +1,7 @@
+prefix=/home/zsh/code/thirdpart/zencpp/1.10.0/x64/ubuntu22.04
+
+Name: zenohcxx
+Description: C++ bindings for Zenoh
+URL: https://github.com/eclipse-zenoh/zenoh-cpp
+Version: 1.10.0
+Cflags: -I${prefix}/include
