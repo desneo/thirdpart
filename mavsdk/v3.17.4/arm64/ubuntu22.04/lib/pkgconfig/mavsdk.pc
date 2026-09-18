@@ -1,0 +1,11 @@
+prefix=/home/firefly/code/3rdparty/common/mavsdk/v3.17.4/arm64/ubuntu22.04
+exec_prefix=/home/firefly/code/3rdparty/common/mavsdk/v3.17.4/arm64/ubuntu22.04/bin
+libdir=/home/firefly/code/3rdparty/common/mavsdk/v3.17.4/arm64/ubuntu22.04/lib
+includedir=/home/firefly/code/3rdparty/common/mavsdk/v3.17.4/arm64/ubuntu22.04/include
+
+Name: MAVSDK
+Description: API and library for MAVLink compatible systems written in C++17
+Version: 3.17.4
+Requires.private: libcurl jsoncpp tinyxml2
+Libs: -L"${libdir}" -lmavsdk
+Cflags: -I"${includedir}" -I"${includedir}/mavsdk"

@@ -1,0 +1,14 @@
+prefix=/home/firefly/code/3rdparty/common/geographiclib/v2.7/arm64/ubuntu22.04
+exec_prefix=${prefix}
+libdir=${exec_prefix}/lib
+includedir=${prefix}/include
+bindir=${exec_prefix}/bin
+
+Name: GeographicLib
+Description: A library for geographic projections
+Version: 2.7
+URL: https://geographiclib.sourceforge.io
+
+Requires:
+Libs: -L${libdir} -lGeographicLib
+Cflags: -I${includedir}
