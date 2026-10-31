@@ -1,0 +1,7 @@
+prefix=/home/firefly/code/3rdparty/common/zenohcpp/1.10.0/arm64/ubuntu22.04
+
+Name: zenohcxx
+Description: C++ bindings for Zenoh
+URL: https://github.com/eclipse-zenoh/zenoh-cpp
+Version: 1.10.0
+Cflags: -I${prefix}/include

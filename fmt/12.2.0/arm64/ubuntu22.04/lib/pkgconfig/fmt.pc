@@ -1,0 +1,11 @@
+prefix=/home/firefly/code/3rdparty/common/fmt/12.2.0/arm64/ubuntu22.04
+exec_prefix=/home/firefly/code/3rdparty/common/fmt/12.2.0/arm64/ubuntu22.04
+libdir=${exec_prefix}/lib
+includedir=${prefix}/include
+
+Name: fmt
+Description: A modern formatting library
+Version: 12.2.0
+Libs: -L${libdir} -lfmt
+Cflags: -I${includedir}
+
