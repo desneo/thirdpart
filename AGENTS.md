@@ -3,6 +3,7 @@
 - 库版本与归档目录：[README.md](README.md)。
 - Ubuntu 24.04 构建与验证：[docs/ubuntu24.04.md](docs/ubuntu24.04.md)。
 - MAVSDK 基线、UDP 定制和重建：[mavsdk/README.md](mavsdk/README.md)。
+- 执行 push 前必须读取并遵守 [双端推送要求](README.md#双端推送要求)。
 
 ## MAVSDK 工作入口
 

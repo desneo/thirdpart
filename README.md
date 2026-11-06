@@ -19,3 +19,16 @@
 | ZLMediaKit | 4b07053 | `zlmediakit/4b07053/x64/ubuntu24.04` |
 
 构建方法、依赖和验证说明见 [Ubuntu 24.04 构建说明](docs/ubuntu24.04.md)。
+
+## 双端推送要求
+
+每次执行 push，除原目标仓库外，必须额外同步到 [GitHub desneo/thirdpart](https://github.com/desneo/thirdpart)。两端须推送相同分支和提交；任一端失败都必须明确报告，不能将单端成功视为同步完成。
+
+以当前 `main` 分支为例，依次执行：
+
+```bash
+git push origin main
+git push git@github.com:desneo/thirdpart.git main
+```
+
+其他分支使用对应的相同分支名。GitHub 命令使用 SSH 地址，与上述 HTTPS 链接指向同一个仓库；推送后应核对两端分支的 commit 与本地一致。
