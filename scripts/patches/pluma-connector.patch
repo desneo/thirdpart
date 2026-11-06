@@ -1,0 +1,16 @@
+--- a/src/Pluma/PluginManager.cpp
++++ b/src/Pluma/PluginManager.cpp
+@@ -53,10 +53,11 @@
+     if (!lib) return false;
+ 
+     fnRegisterPlugin* registerFunction;
+-    registerFunction = reinterpret_cast<fnRegisterPlugin*>(lib->getSymbol("connect"));
++    // 定制接口：与归档插件的 connectToPlumaHost 入口保持一致。
++    registerFunction = reinterpret_cast<fnRegisterPlugin*>(lib->getSymbol("connectToPlumaHost"));
+ 
+     if(!registerFunction){
+-        fprintf(stderr, "Failed to initialize plugin \"%s\": connect function not found\n", plugName.c_str());
++        fprintf(stderr, "Failed to initialize plugin \"%s\": connectToPlumaHost function not found\n", plugName.c_str());
+         delete lib;
+         return false;
+     }
